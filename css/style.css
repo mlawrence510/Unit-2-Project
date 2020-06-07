@@ -1,0 +1,160 @@
+/* --------------Base Styles-------------- */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	background-color: #F8F8F8;
+  color: #484848;
+  max-width: 90%;
+  margin: 1.5em auto;
+  text-align: center;
+}
+
+ul {
+  list-style-type:none;
+  padding-left: 0;
+}
+
+p {
+  font-weight: 300;
+  font-size: .9em;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  color: #484848;
+}
+
+h2,
+a {
+	color: #484848;
+  font-weight: 700;
+  font-size: .95em;
+}
+
+h3 {
+  color: #484848;
+  font-weight: 500;
+  front-size: 1.1em;
+}
+
+nav {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+nav a {
+  padding: 10px 15px;
+  text-align: center;
+  display: block;
+  margin: 5px 0;
+}
+
+
+/* --------------Layout-------------- */
+
+.main-content {
+  background-color: #fff;
+  padding: 0 1em 3em;
+}
+
+.col-text {
+  padding: 1em 0;
+}
+
+.port-img {
+  max-width: 100%;
+}
+
+.intro {
+  padding-bottom: 2em;
+}
+
+.intro-img {
+  max-width: 65%;
+}
+
+.col p {
+  max-width: 90%
+  margin 0 auto;
+}
+
+.main-nav {
+  margin-bottom: 3em;
+}
+
+.portfolio {
+  padding: 3em 0;
+}
+
+.contact {
+  padding: 3em 0;
+  font-size: 1.2em;
+}
+
+.main-footer {
+  border-top: 1px solid #DCDCDC;
+  padding: 2em 0;
+}
+
+.contact a {
+	line-height: 1.6;
+  color: #484848;
+  padding-left: 1em;
+  font-weight: 600;
+}
+
+.contact h2 {
+  margin: 1em 0 2.5em;
+}
+
+.contact-text {
+  margin-bottom: 2em;
+}
+
+.bottom-name {
+  float: left;
+}
+
+.back-to-top {
+  float: right;
+}
+
+.back-to-top a {
+  font-size: .75em;
+  display: block;
+}
+
+.bottom-name p {
+  display: block;
+  margin: 0;
+  color: #484848;
+  font-weight: 600;
+}
+
+/* --------------Actived Styles-------------- */
+
+nav a:link {
+  background-color: #fff;
+}
+
+nav a:hover {
+  background-color: #F0F0F0;
+}
+
+/* --------------Media Queries-------------- */
+
+@media (max-width: 767px) {
+  .bot-nav {
+    display: none;
+  }
+}
