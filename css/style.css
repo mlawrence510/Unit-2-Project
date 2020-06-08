@@ -225,6 +225,7 @@ h2 {
 
   .main-content {
     max-width: 100%
+    overflow: auto;
   }
 
   .col {
