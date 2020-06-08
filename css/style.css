@@ -46,12 +46,13 @@ a {
 	color: #484848;
   font-weight: 700;
   font-size: .95em;
+  font-family: 'Khula', sans-serif;
 }
 
 h3 {
   color: #484848;
   font-weight: 500;
-  front-size: 1.1em;
+  font-size: 1.2em;
 }
 
 nav {
@@ -69,9 +70,6 @@ nav a {
 
 /* --------------Layout-------------- */
 
-h2 {
-  font-size: .85rem;
-}
 
 .main-content {
   background-color: #fff;
@@ -95,8 +93,8 @@ h2 {
 }
 
 .col p {
-  max-width: 90%
-  margin 0 auto;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .main-nav {
@@ -151,19 +149,18 @@ h2 {
   float: left;
 }
 
+.bot-nav {
+  display: none;
+}
+
+nav a:link {
+  background-color: #fff;
+}
 
 /* --------------Media Queries-------------- */
 
-@media (max-width: 767px) {
-  .bot-nav {
-    display: none;
-  }
 
-  nav a:link {
-    background-color: #fff;
-  }
 
-}
 
 @media (min-width: 768px) {
 
@@ -224,8 +221,7 @@ h2 {
   }
 
   .main-content {
-    max-width: 100%
-    overflow: auto;
+    max-width: 100%;
   }
 
   .col {
@@ -252,15 +248,10 @@ h2 {
     margin: 0 auto;
   }
 
-
-
 }
 
 @media (min-width: 1024px) {
 
-  nav a:hover {
-    background-color: #F0F0F0;
-  }
 
   .top-name {
     float: left;
@@ -280,6 +271,21 @@ h2 {
 
   .intro-text {
     width: 57%;
+  }
+
+  .main-content {
+    border-left: 1.5em solid #F8F8F8;
+    border-right: 1.5em solid #F8F8F8;
+  }
+
+  /*------------Link Styles----------*/
+
+  nav a:hover {
+    background-color: #F0F0F0;
+  }
+
+  nav a:link {
+    background-color: #F8F8F8;
   }
 
 }
