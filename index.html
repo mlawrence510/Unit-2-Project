@@ -14,24 +14,29 @@
   <div class="wrapper">
 
     <header>
-      <h1 id="home">Student Name</h1>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#skills">SKILLS</a></li>
-          <li><a href="#portfolio">PORTFOLIO</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
-      </nav>
-      <div class="intro">
+      <div class="clearfix">
+        <h1 class="top-name" id="home">Student Name</h1>
+        <nav class="main-nav clearfix">
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="intro clearfix">
         <img class="intro-img" src="images/responsive-layout-profile.png" alt="Profile Image">
-        <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+        <p class="intro-text">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
       </div>
     </header>
 
     <main>
       <div class="main-content">
-        <div id="portfolio">
+        <div id="skills">
+          <h2 class="skills">SKILLS</h2>
+        </div>
+        <div id="portfolio" class="port-section">
           <h2 class="portfolio">PORTFOLIO</h2>
 
           <div class="col">
@@ -93,21 +98,17 @@
     </main>
 
     <footer>
-      <div class="main-footer">
-        <div class="bottom-name">
-          <p>Student name</p>
-        </div>
+      <div class="main-footer clearfix">
+          <h2 class="bottom-name">Student name</h2>
         <div class="back-to-top">
           <a href="#home">BACK TO TOP</a>
         </div>
-        <div class="bot-nav">
-          <ul>
+          <ul class="bot-nav">
           <li><a href="#">HOME</a></li>
           <li><a href="#">SKILLS</a></li>
           <li><a href="#">PORTFOLIO</a></li>
           <li><a href="#">CONTACT</a></li>
           </ul>
-        </div>
       </div>
     </footer>
 

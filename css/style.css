@@ -9,12 +9,19 @@ body {
 	line-height: 1.6;
 	background-color: #F8F8F8;
   color: #484848;
-  max-width: 90%;
   margin: 1.5em auto;
   text-align: center;
 }
 
-ul {
+header,
+main,
+footer {
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+nav ul,
+footer ul {
   list-style-type:none;
   padding-left: 0;
 }
@@ -62,6 +69,10 @@ nav a {
 
 /* --------------Layout-------------- */
 
+h2 {
+  font-size: .85rem;
+}
+
 .main-content {
   background-color: #fff;
   padding: 0 1em 3em;
@@ -92,6 +103,10 @@ nav a {
   margin-bottom: 3em;
 }
 
+.skills {
+  padding: 3em 0;
+}
+
 .portfolio {
   padding: 3em 0;
 }
@@ -114,16 +129,13 @@ nav a {
 }
 
 .contact h2 {
-  margin: 1em 0 2.5em;
+  margin: 1em 0 3em;
 }
 
 .contact-text {
   margin-bottom: 2em;
 }
 
-.bottom-name {
-  float: left;
-}
 
 .back-to-top {
   float: right;
@@ -134,22 +146,11 @@ nav a {
   display: block;
 }
 
-.bottom-name p {
-  display: block;
+.bottom-name {
   margin: 0;
-  color: #484848;
-  font-weight: 600;
+  float: left;
 }
 
-/* --------------Actived Styles-------------- */
-
-nav a:link {
-  background-color: #fff;
-}
-
-nav a:hover {
-  background-color: #F0F0F0;
-}
 
 /* --------------Media Queries-------------- */
 
@@ -157,4 +158,127 @@ nav a:hover {
   .bot-nav {
     display: none;
   }
+
+  nav a:link {
+    background-color: #fff;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .main-nav {
+    overflow: hidden;
+    display: inline-block;
+  }
+
+
+  .main-nav li,
+  .bot-nav li {
+    float: left;
+  }
+
+  .bot-nav li {
+    margin-left: 1em;
+  }
+
+  .bot-nav{
+    float: right;
+    margin: 0;
+    display: inline-block;
+  }
+
+  .intro-img {
+    float: right;
+    margin: 15px 0 15px 15px;
+    width: 45%;
+  }
+
+  .intro-text {
+    float: left;
+    width: 52%;
+    text-align: left;
+  }
+
+  .intro-text,
+  .contact-text,
+  .contact p {
+    font-size: 1.2em;
+  }
+
+  .contact-text {
+    max-width: 65%;
+    margin: 0 auto 3em;
+  }
+
+
+  main,
+  footer {
+    max-width: 100%;
+  }
+
+  .main-content {
+    max-width: 100%
+  }
+
+  .col {
+    float: left;
+    max-width: 50%;
+    padding: 0 8px 24px;
+  }
+
+  .port-section {
+    max-width: 100%;
+    display: block;
+  }
+
+  .contact {
+    clear: both;
+  }
+
+  .back-to-top {
+    display: none;
+  }
+
+  .main-footer {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+
+
+}
+
+@media (min-width: 1024px) {
+
+  nav a:hover {
+    background-color: #F0F0F0;
+  }
+
+  .top-name {
+    float: left;
+  }
+
+  .main-nav {
+    float: right;
+  }
+
+  .col {
+    width: 33.33%;
+  }
+
+  .intro-img {
+    width: 40%;
+  }
+
+  .intro-text {
+    width: 57%;
+  }
+
 }
