@@ -45,7 +45,7 @@ h2,
 a {
 	color: #484848;
   font-weight: 700;
-  font-size: .95em;
+  font-size: 1.1em;
   font-family: 'Khula', sans-serif;
 }
 
@@ -77,16 +77,14 @@ nav a {
 }
 
 .col-text {
-  padding: 1em 0;
+  padding: 1em 0 2em;
 }
 
-.port-img {
+.port-img,
+.skills-img {
   max-width: 100%;
 }
 
-.intro {
-  padding-bottom: 2em;
-}
 
 .intro-img {
   max-width: 65%;
@@ -101,22 +99,23 @@ nav a {
   margin-bottom: 3em;
 }
 
-.skills {
-  padding: 3em 0;
-}
 
-.portfolio {
-  padding: 3em 0;
+.portfolio,
+.skills-title {
+  padding: 3em 0 3em;
 }
 
 .contact {
   padding: 3em 0;
+}
+
+.contact-text p {
   font-size: 1.2em;
 }
 
 .main-footer {
   border-top: 1px solid #DCDCDC;
-  padding: 2em 0;
+  padding: 2em 0 0;
 }
 
 .contact a {
@@ -153,6 +152,9 @@ nav a {
   display: none;
 }
 
+
+/*------------Link Styles----------*/
+
 nav a:link {
   background-color: #fff;
 }
@@ -181,6 +183,14 @@ nav a:link {
     float: left;
   }
 
+  .skills-img {
+    float: left;
+    margin: 15px 15px 15px 0;
+    padding-left: 8px;
+    width: 45%;
+  }
+
+
   .bot-nav li {
     margin-left: 1em;
   }
@@ -205,8 +215,15 @@ nav a:link {
 
   .intro-text,
   .contact-text,
-  .contact p {
+  .contact p,
+  .skills-text {
     font-size: 1.2em;
+  }
+
+  .skills-text {
+    float: right;
+    max-width: 52%;
+    text-align: left;
   }
 
   .contact-text {
@@ -230,6 +247,10 @@ nav a:link {
     padding: 0 8px 24px;
   }
 
+  .col-text p {
+    height:  69px
+  }
+
   .port-section {
     max-width: 100%;
     display: block;
@@ -247,6 +268,13 @@ nav a:link {
     max-width: 95%;
     margin: 0 auto;
   }
+
+/*------------Link Styles----------*/
+
+  nav a:link {
+    background-color: #F8F8F8;
+  }
+
 
 }
 
@@ -284,8 +312,5 @@ nav a:link {
     background-color: #F0F0F0;
   }
 
-  nav a:link {
-    background-color: #F8F8F8;
-  }
 
 }
